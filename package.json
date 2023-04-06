@@ -1,0 +1,24 @@
+{
+    "name": "graph-js",
+    "version": "1.0.0",
+    "description": "A graph data structure implementation using ES6 Maps and Sets.",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "mocha"
+    },
+    "keywords": [
+        "graph",
+        "data structure",
+        "bidirectional",
+        "undirected",
+        "tiny",
+        "small"
+    ],
+    "author": "Jack H Peterson <npm.graph.js@jackhpeterson.com>",
+    "license": "MIT",
+    "dependencies": {
+        "chai": "^4.3.7",
+        "mocha": "^10.2.0"
+    }
+}
