@@ -1,3 +1,5 @@
+<img src="./logo.svg" alt="logo" style="width:8rem;">
+
 # graph-js
 This module is an implementation of an undirected graph data structure using ES6 Maps and Sets.
 ## Install
