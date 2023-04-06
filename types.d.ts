@@ -7,7 +7,6 @@ declare type Graph = {
     set: (k: any) => (v: any) => void;
     nodes: () => Set<any>;
     edges: () => Array<[any, any]>;
-    tidy: (err: (msg: string) => void) => boolean;
 };
 
 declare const Graph: (entries?: Array<[any, any]>) => Graph;

@@ -103,12 +103,4 @@ describe("Graph", () => {
     });
   });
 
-  describe("tidy", () => {
-    it("should not throw an error when all edges are bidirectional", () => {
-      const graph = Graph();
-      graph.set("a")("b");
-      graph.set("b")("a");
-      assert.doesNotThrow(() => graph.tidy((x) => new Throw(x)));
-    });
-  });
 });

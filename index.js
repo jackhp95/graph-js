@@ -10,7 +10,6 @@
  * @property {function} set - Adds an edge between two nodes to the graph.
  * @property {function} nodes - Returns a Set of all nodes in the graph.
  * @property {function} edges - Returns an array of all edges in the graph.
- * @property {function} tidy - Verifies that all edges are bidirectional.
  * @param {Array} entries - An optional array of [key, value] pairs to initialize the graph.
  * @returns {Graph} An object representing a graph data structure.
  */
@@ -130,24 +129,6 @@ const Graph = (entries = []) => {
       const e = [];
       loop(([k, vs]) => loop((v) => e.push([k, v]))(vs))(g.entries());
       return e;
-    },
-
-    /**
-     * Checks that all edges in the graph are bidirectional and that the graph is consistent.
-     * @param {Function} err - The error function to call if inconsistencies are found.
-     */
-    tidy: (err) => {
-      loop(([k, vs]) => {
-        loop((v) => {
-          if (g.has(v)) {
-            if (!g.get(v).has(k)) {
-              err("non-bidirectional | exists in set, not in map: ", k);
-            }
-          } else {
-            err("non-bidirectional | exists in map, not in set: ", v);
-          }
-        })(vs);
-      })(g.entries());
     },
   };
 };

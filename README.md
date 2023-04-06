@@ -1,6 +1,17 @@
 # Graph Data Structure Implementation
 
 This module is an implementation of an undirected graph data structure using ES6 Maps and Sets.
+## Install
+### unpkg
+```html
+<script src="https://cdn.jsdelivr.net/gh/jackhp95/graph-js@master/index.min.js"></script>
+```
+
+### jsdelivr
+```html
+<script src="https://cdn.jsdelivr.net/gh/jackhp95/graph-js@master/index.min.js"></script>
+```
+
 
 ## Usage
 
@@ -16,7 +27,7 @@ const myGraph = Graph([
   ['C', 'B'],
 ]);
 
-console.log(myGraph); // { clear: [Function], delete: [Function], remove: [Function], size: [Function], has: [Function], get: [Function], set: [Function], nodes: [Function], edges: [Function], tidy: [Function] }
+console.log(myGraph); // { clear: [Function], delete: [Function], remove: [Function], size: [Function], has: [Function], get: [Function], set: [Function], nodes: [Function], edges: [Function] }
 ```
 
 ### Adding and removing nodes and edges
@@ -93,15 +104,6 @@ You can clear all nodes and edges from the graph by calling the `clear` method:
 myGraph.clear();
 ```
 
-### Checking for consistency
-
-You can check that all edges in the graph are bidirectional and that the graph is consistent by calling the `tidy` method:
-
-```javascript
-myGraph.tidy((message) => console.error(message));
-```
-
-If any inconsistencies are found, an error message will be passed to the callback function.
 
 ## Examples
 
