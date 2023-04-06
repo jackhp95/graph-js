@@ -1,5 +1,4 @@
-# Graph Data Structure Implementation
-
+# graph-js
 This module is an implementation of an undirected graph data structure using ES6 Maps and Sets.
 ## Install
 ### unpkg
