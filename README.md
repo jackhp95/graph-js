@@ -9,6 +9,9 @@ This module is an implementation of an undirected graph data structure using ES6
 <script src="https://cdn.jsdelivr.net/gh/jackhp95/graph-js@master/index.min.js"></script>
 ```
 
+## Purpose
+
+Someone would need a module like this when they need to represent a graph data structure in their JavaScript project. Graphs are used to represent complex relationships between objects or entities, and are commonly used in areas such as computer networking, social network analysis, and recommendation systems. This implementation uses ES6 Maps and Sets, which are efficient data structures for working with key-value pairs and collections of unique values, respectively. The module provides methods for adding and removing nodes and edges, checking for the presence of nodes and edges, and retrieving information about the graph such as the size, nodes, and edges. It can be used in a wide range of applications that require graph-based data structures and algorithms.
 
 ## Usage
 
